@@ -14,12 +14,14 @@ const Login = () => {
       
       };
     console.log(credentials);
-    axios.post('http://localhost:4000/api/loginuser' , data)
+    const response = axios.post('http://localhost:4000/api/loginuser' , data)
       
       .then(
-         () => {
+         (res) => {
            
-           console.log(data); 
+          localStorage.setItem("userEmail" , credentials.email)
+           localStorage.setItem("authToken" , res.data.authToken);
+           console.log(localStorage.getItem("authToken")) 
            navigate('/');           
         }
       )
