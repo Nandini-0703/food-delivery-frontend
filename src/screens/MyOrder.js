@@ -8,7 +8,7 @@ const MyOrder = () => {
     const fetchMyOrder = async () => {
         console.log(localStorage.getItem('userEmail'))
    
-    await fetch("http://localhost:4000/api/myOrderData", {
+    await fetch("https://food-delivery-backend-6.onrender.com/api/myOrderData", {
         
         method: 'POST',
         headers: {

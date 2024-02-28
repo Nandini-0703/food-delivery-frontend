@@ -14,7 +14,7 @@ const Login = () => {
       
       };
     console.log(credentials);
-    const response = axios.post('http://localhost:4000/api/loginuser' , data)
+    const response = axios.post('https://food-delivery-backend-6.onrender.com/api/loginuser' , data)
       
       .then(
          (res) => {

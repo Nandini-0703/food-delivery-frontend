@@ -12,7 +12,7 @@ const Home = () => {
 
   const loadData = () => {
     const responsedata = axios
-      .post("http://localhost:4000/api/foodData")
+      .post("https://food-delivery-backend-6.onrender.com/api/foodData")
 
       .then((responsedata) => {
         // responsedata = await responsedata.json();

@@ -19,7 +19,7 @@ export default function Cart()  {
       let userEmail = localStorage.getItem("userEmail");
       console.log(userEmail);
       
-      const response = await axios.post('http://localhost:4000/api/orderData' , {
+      const response = await axios.post('https://food-delivery-backend-6.onrender.com/api/orderData' , {
             order_data: data,
             email: userEmail,
             order_date: new Date().toDateString()

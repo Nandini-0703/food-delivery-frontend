@@ -13,7 +13,7 @@ const Signup = () => {
           location:credentials.geolocation ,
         };
       console.log(credentials);
-      axios.post('http://localhost:4000/api' , data)
+      axios.post('https://food-delivery-backend-6.onrender.com/api' , data)
         
         .then(
            () => {
